@@ -1,4 +1,5 @@
 import { Grid,Card,Typography,Tabs,Tab,Box } from '@mui/material';
+import { display } from '@mui/system';
 import { useState } from 'react';
 import Pic1 from '../../../images/pic1'
 
@@ -25,11 +26,12 @@ const LoginReg=()=>{
             backgroundImage:`url(${Pic1})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            display: {xs:'none',sm:'block'}
         }}>
         
         </Grid>
-        <Grid item Lg={5} sm={7}>
+        <Grid item Lg={5} sm={7} xs={12}>
         <Card sx={{width:'100%',height:'100%'}}>
             <Box>
                 <Box sx={{borderBottom:1,borderColor:'divider'}}>
